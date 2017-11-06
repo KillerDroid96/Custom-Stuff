@@ -73,7 +73,16 @@ git push git@github.com:KillerDroid96/Resurrection_packages_apps_Settings.git OM
 
 
 ---------------------------Cherry-pick the single commit-------------------
-
+git remote add ezio git@github.com:ezio84/abc_device_huawei_angler.git
+git fetch ezio
+git cherry-pick 0931bb92d51e55f06af27243471b01358c74d5a0
+if 
+error: could not apply 0931bb9... Enable Night mode
+both modified:   overlay/frameworks/base/core/res/res/values/config.xml (fix conflicts)
+git status 
+else 
+git commit -a
+git push
 -----------------------Errors----------------------------------------------
 1-fatal: remote upstream already exists OR
   fatal: ‘upstream’ does not appear to be a git repository
