@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "Renaming files in folder to sequential numbers"
+a=1
+for i in *.png; do
+  new=$(printf "Dragon_%04d.png" "$a") 
+  mv -- "$i" "$new"
+  let a=a+1
+done
+
+#(%d) sets the number of decimals so if (%04d) 0000 will output
+# a=1 this sets the number it will start count at.
+# *.png; sets all files ending in .png to be renamed
+#  mv -- "$i" "$new"
+
+

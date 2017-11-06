@@ -1,0 +1,157 @@
+#!/bin/bash
+#################################################################################################################
+
+# Specify colors utilized in the terminal
+normal=$(tput sgr0)              # White
+red=$(tput setaf 1)              # Red
+green=$(tput setaf 2)            # Green
+yellow=$(tput setaf 3)           # Yellow
+blue=$(tput setaf 21)            # Blue
+violet=$(tput setaf 5)           # Violet
+cyan=$(tput setaf 6)             # Cyan
+white=$(tput setaf 7)            # White
+bldred=${txtbld}$(tput setaf 1)  # Bold Red
+bldgrn=${txtbld}$(tput setaf 2)  # Bold Green
+bldblu=${txtbld}$(tput setaf 21) # Bold Blue
+bldylw=${txtbld}$(tput setaf 3)  # Bold Yellow
+bldvlt=${txtbld}$(tput setaf 5)  # Bold Violet
+bldcya=${txtbld}$(tput setaf 6)  # Bold Cyan
+bldwht=${txtbld}$(tput setaf 7)  # Bold White
+blink=$(tput blink)              # Blink
+bold=$(tput bold)                # Bold
+reverse=$(tput smso)		 # Reverse Colors
+underline=$(tput smul)           # Underline
+
+#################################################################################################################
+echo "                                                                           ";
+echo "                                                                           ";
+echo "                                                                           ";
+tput setaf 1
+echo " /##                   /##                     /######              /##    ";
+echo "| ##                  | ##                    /##__  ##            | ##    ";
+tput setaf 3
+echo "| ##        /######  /######   /#######      | ##  \__/  /######  /######  ";
+echo "| ##       /##__  ##|_  ##_/  /##_____/      | ## /#### /##__  ##|_  ##_/  ";
+tput setaf 2
+echo "| ##      | ########  | ##   |  ######       | ##|_  ##| ########  | ##    ";
+echo "| ##      | ##_____/  | ## /##\____  ##      | ##  \ ##| ##_____/  | ## /##";
+tput setaf 1
+echo "| ########|  #######  |  ####//#######/      |  ######/|  #######  |  ####/";
+echo "|________/ \_______/   \___/ |_______/        \______/  \_______/   \___/  ";
+echo "                                                                           ";
+echo "                                                                           ";
+tput setaf 1
+echo " /#######                          /##                           /## /##   ";
+echo "| ##__  ##                        |__/                          | ##| ##   ";
+tput setaf 3
+echo "| ##  \ ##  /######  /######/####  /## /##   /##  /######   /#######| ##   ";
+echo "| #######/ /##__  ##| ##_  ##_  ##| ##|  ## /##/ /##__  ## /##__  ##| ##   ";
+tput setaf 2
+echo "| ##__  ##| ########| ## \ ## \ ##| ## \  ####/ | ########| ##  | ##|__/   ";
+echo "| ##  \ ##| ##_____/| ## | ## | ##| ##  >##  ## | ##_____/| ##  | ##       ";
+tput setaf 1
+echo "| ##  | ##|  #######| ## | ## | ##| ## /##/\  ##|  #######|  ####### /##   ";
+echo "|__/  |__/ \_______/|__/ |__/ |__/|__/|__/  \__/ \_______/ \_______/|__/   ";
+tput setaf 3
+echo "                                                                           ";
+echo "                                                                           ";
+echo "                                                                           ";
+
+#######################################################################################################
+
+echo -e $white ""
+PS3='Choose Build type: ' 
+options=(${green}"Clean"${white} ${yellow}"Dirty"${white} ${red}"Exit"${white})
+select opt in "${options[@]}"
+do
+    case $opt in
+        "${green}Clean${white}")
+	    echo ""
+            echo "${green}Clean Build${white}"
+
+echo -e "Select Device to Build"
+PS3='Build: '
+options=("Nexus 6P" "Galaxy S4" ${red}"Exit"${white})
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Nexus 6P")
+	    echo "${blue}"
+            echo "Building Nexus 6P ROM"
+	    make clobber
+	    make clean
+	    time repo sync --force-broken --force-sync --no-clone-bundle
+	    export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx14g"
+	    ./prebuilts/sdk/tools/jack-admin kill-server
+	    ./prebuilts/sdk/tools/jack-admin start-server
+	    . build/envsetup.sh 
+	    brunch angler
+            ;;
+        "Galaxy S4")
+	    echo "${blue}"
+            echo "Building Galaxy S4 ROM"
+        make clobber
+        make clean
+        time repo sync --force-broken --force-sync --no-clone-bundle 
+        export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx14g"
+        ./prebuilts/sdk/tools/jack-admin kill-server
+   	    ./prebuilts/sdk/tools/jack-admin start-server
+        . build/envsetup.sh 
+        breakfast jfltespr
+        mka bacon
+            ;;
+        "${red}Exit${white}")
+            break
+            ;;
+        *) echo invalid option;;
+    esac
+done
+            ;;
+        "${yellow}Dirty${white}")
+	    echo ""
+            echo "${yellow}Dirty Build${white}"
+
+echo -e "Select Device to Build"
+PS3='Build: '
+options=("Nexus 6P" "Galaxy S4" ${red}"Exit"${white})
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Nexus 6P")
+	    echo "${blue}"
+            echo "Building Nexus 6P ROM"
+	    make dirty
+	    time repo sync --force-broken --force-sync --no-clone-bundle 
+	    export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx14g"
+	    ./prebuilts/sdk/tools/jack-admin kill-server
+	    ./prebuilts/sdk/tools/jack-admin start-server
+	    . build/envsetup.sh 
+	    echo "${blue}"
+	    brunch angler
+            ;;
+        "Galaxy S4")
+	    echo "${blue}"
+            echo "Building Galaxy S4 ROM"
+	    make dirty
+            time repo sync --force-broken --force-sync --no-clone-bundle 
+            export JACK_SERVER_VM_ARGUMENTS="-Dfile.encoding=UTF-8 -XX:+TieredCompilation -Xmx14g"
+            ./prebuilts/sdk/tools/jack-admin kill-server
+   	        ./prebuilts/sdk/tools/jack-admin start-server
+            . build/envsetup.sh 
+            breakfast jfltespr
+            mka bacon
+            ;;
+        "${red}Exit${white}")
+	echo "Exiting"
+            break
+            ;;
+        *) echo invalid option;;
+    esac
+done
+            ;;
+        "${red}Exit${white}")
+            break
+            ;;
+        *) echo invalid option;;
+    esac
+done

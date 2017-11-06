@@ -1,0 +1,84 @@
+----------Forking a repo--------
+git clone https://github.com/KillerDroid96/android_system_core.git -b cm-14.1
+
+git checkout -b OMS
+Switched to a new branch "OMS"
+
+Note git checkout -b OMS is shorthand for:
+git branch OMS
+git checkout OMS
+
+Now it's time to see what's going on:
+git status"
+
+------------Pushing the changes-------------
+Add all modified files:
+git add .
+Add all removed files
+git add -u
+
+You can also add/rm one file
+git add name_of_file
+git rm name_of_file
+
+git commit -m 'my first commit'
+git push
+If you'll get some errors use the following:
+git push git@github.com:KillerDroid96/platform_system_core.git OMS
+git push https://github.com/KillerDroid96/android_system_core.git OMS
+
+------------------REVERT CHANGES-------------------------------
+To discard all unstaged changes e.g. failed merge etc. type:
+
+git checkout .
+# to delete all changes
+
+git checkout path/to/file
+# to discard changes for a specific file
+
+rm -rf ./ 
+# deletes all of the files in the directory
+
+git reset --hard
+
+----------------HOW TO REMOVE COMMITTED CHANGES?------------
+To remove committed changes you have to revert the commit. But how to do that? It's your answer
+
+git reset HEAD --hard
+
+HEAD is the previous commit. To revert to previous state use HEAD~1, HEAD~2 etc. you can also use the code taken from git log.
+
+
+-------------------Removing branch--------------------
+git branch -a
+git branch -rd origin/OMS
+# Deleted remote branch origin/OMS (was 808ffbb).
+git push git@github.com:KillerDroid96/Resurrection_packages_apps_Settings.git :refs/heads/OMS
+
+
+------------------Merging the commits--------------------------
+git remote add upstream https://github.com/SubstratumResources/platform_packages_apps_settings.git 
+git fetch upstream
+
+You'll get a message to resolve the conflicts. In short and most n00b friendly way is to open pointed files and delete the: 
+<<<<<<<<
+=======
+>>>>>>>>
+symbols.
+
+
+git add .
+git commit -m 'test merge'
+git push git@github.com:KillerDroid96/Resurrection_packages_apps_Settings.git OMS
+
+
+---------------------------Cherry-pick the single commit-------------------
+
+-----------------------Errors----------------------------------------------
+1-fatal: remote upstream already exists OR
+  fatal: ‘upstream’ does not appear to be a git repository
+	Fix: 
+	git remote -v
+	git remote set-url upstream https://github.com/SubstratumResources/platform_packages_apps_settings.git
+	git remote -v
+	git fetch upstream

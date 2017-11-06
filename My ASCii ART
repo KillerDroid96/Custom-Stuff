@@ -1,0 +1,171 @@
+
+script.Print("                                        ")
+script.Print("                                        ")
+script.Print("DDDDDDDDDDDDD      DDDDDDDDDDDDD        ")
+script.Print("D::::::::::::DDD   D::::::::::::DDD     ")
+script.Print("D:::::::::::::::DD D:::::::::::::::DD   ")
+script.Print("DDD:::::DDDDD:::::DDDD:::::DDDDD:::::D  ")
+script.Print("  D:::::D    D:::::D D:::::D    D:::::D ")
+script.Print("  D:::::D     D:::::DD:::::D     D:::::D")
+script.Print("  D:::::D     D:::::DD:::::D     D:::::D")
+script.Print("  D:::::D     D:::::DD:::::D     D:::::D")
+script.Print("  D:::::D     D:::::DD:::::D     D:::::D")
+script.Print("  D:::::D     D:::::DD:::::D     D:::::D")
+script.Print("  D:::::D     D:::::DD:::::D     D:::::D")
+script.Print("  D:::::D    D:::::D D:::::D    D:::::D ")
+script.Print("DDD:::::DDDDD:::::DDDD:::::DDDDD:::::D  ")
+script.Print("D:::::::::::::::DD D:::::::::::::::DD   ")
+script.Print("D::::::::::::DDD   D::::::::::::DDD     ")
+script.Print("DDDDDDDDDDDDD      DDDDDDDDDDDDD        ")
+script.Print("                                        ")
+script.Print("                                        ")
+script.Print("                                        ")
+
+    echo "           _____   _                 _____                                      ";
+	echo "          (____ \ (_)      _        (____ \                                     ";
+	echo "           _   \ \ _  ____| |_ _   _ _   \ \ ____ ____  ____  ___  ____   ___   ";
+	echo "          | |   | | |/ ___|  _| | | | |   | / ___/ _  |/ _  |/ _ \|  _ \ /___)  ";
+	echo "          | |__/ /| | |   | |_| |_| | |__/ | |  ( ( | ( ( | | |_| | | | |___ |  ";
+	echo "          |_____/ |_|_|    \___\__  |_____/|_|   \_||_|\_|| |\___/|_| |_(___/   ";
+	echo "                              (____/                  (_____|                   ";
+	tput setaf 3
+	echo "         ______           ______                    _    _      _ _             ";
+	echo "        (____  \         |  ___ \       _   _      | |  / )    | | |            ";
+	echo "         ____)  )_   _   | | _ | | ____| |_| |_    | | / / ____| | | ____  ____ ";
+	echo "        |  __  (| | | |  | || || |/ _  |  _|  _)   | |< < / _  | | |/ _  )/ ___)";
+	echo "        | |__)  | |_| |  | || || ( ( | | |_| |__   | | \ ( (/ /| | ( (/ /| |    ";
+	echo "        |______/ \__  |  |_||_||_|\_||_|\___\___)  |_|  \_\____|_|_|\____|_|    ";
+	echo "                (____/                                                          ";
+	tput setaf 2
+	echo "         __ _    _ _ _ _             _____             _     _  ____   __ __    ";
+	echo "        / _| |  / (_| | |           (____ \           (_)   | |/ __ \ / /(_ \   ";
+	echo "       / / | | / / _| | | ____  ____ _   \ \ ____ ___  _  _ | ( (__) / /_  \ \  ";
+	echo "      ( (  | |< < | | | |/ _  )/ ___| |   | / ___/ _ \| |/ || |\__  / __ \  ) ) ";
+	echo "       \ \_| | \ \| | | ( (/ /| |   | |__/ | |  | |_| | ( (_| |  / ( (__) _/ /  ";
+	echo "        \__|_|  \_|_|_|_|\____|_|   |_____/|_|   \___/|_|\____| /_/ \____(__/   ";
+	echo "                                                                                ";
+
+$L "  _____  _      _         _____                                  ";
+$L " |  __ \(_)    | |       |  __ \                                 ";
+$L " | |  | |_ _ __| |_ _   _| |  | |_ __ __ _  __ _  ___  _ __  ___ ";
+$L " | |  | | | '__| __| | | | |  | | '__/ _\`|/ _\`|/ _ \| '_ \/ __|";
+$L " | |__| | | |  | |_| |_| | |__| | | | (_| | (_| | (_) | | | \__ \";
+$L " |_____/|_|_|   \__|\__, |_____/|_|  \__,_|\__, |\___/|_| |_|___/";
+$L "                     __/ |                  __/ |                ";
+$L "                    |___/                  |___/                 ";_/";
+
+
+script.Print(" ")
+script.Print(" ")
+script.Print("                 _____   _                        ")
+script.Print("                (____ \ (_)      _                ")
+script.Print("                 _   \ \ _  ____| |_ _   _        ")
+script.Print("                | |   | | |/ ___)  _) | | |       ")
+script.Print("                | |__/ /| | |   | |_| |_| |       ")
+script.Print("         _____  |_____/ |_|_|    \___)__  |       ")
+script.Print("        (____ \                     (____/        ")
+script.Print("         _   \ \ ____ ____  ____  ___  ____   ___ ")
+script.Print("        | |   | / ___) _  |/ _  |/ _ \|  _ \ /___)")
+script.Print("        | |__/ / |  ( ( | ( ( | | |_| | | | |___ |")
+script.Print("        |_____/|_|   \_||_|\_|| |\___/|_| |_(___/ ")
+script.Print("                          (_____|                 ")
+script.Print(" ")
+script.Print(" ")
+
+script.Print("         _____   _                        ")
+script.Print("        (____ \ (_)      _                ")
+script.Print("         _   \ \ _  ____| |_ _   _        ")
+script.Print("        | |   | | |/ ___)  _) | | |       ")
+script.Print("        | |__/ /| | |   | |_| |_| |       ")
+script.Print(" _____  |_____/ |_|_|    \___)__  |       ")
+script.Print("(____ \                     (____/        ")
+script.Print(" _   \ \ ____ ____  ____  ___  ____   ___ ")
+script.Print("| |   | / ___) _  |/ _  |/ _ \|  _ \ /___)")
+script.Print("| |__/ / |  ( ( | ( ( | | |_| | | | |___ |")
+script.Print("|_____/|_|   \_||_|\_|| |\___/|_| |_(___/ ")
+script.Print("                  (_____|                 ")
+
+script.Print("     _____   _                            ")
+script.Print("    (____ \ (_)      _                    ")
+script.Print("     _   \ \ _  ____| |_ _   _            ")
+script.Print("    | |   | | |/ ___)  _) | | |           ")
+script.Print("    | |__/ /| | |   | |_| |_| |           ")
+script.Print("    |_____/ |_|_|    \___)__  |           ")
+script.Print("                        (____/            ")
+script.Print(" _____                                    ")
+script.Print("(____ \                                   ")
+script.Print(" _   \ \ ____ ____  ____  ___  ____   ___ ")
+script.Print("| |   | / ___) _  |/ _  |/ _ \|  _ \ /___)")
+script.Print("| |__/ / |  ( ( | ( ( | | |_| | | | |___ |")
+script.Print("|_____/|_|   \_||_|\_|| |\___/|_| |_(___/ ")
+script.Print("                  (_____|                 ")
+
+
+script.Print("       __         __                           ")
+script.Print("      |  \. _|_  |  \ _ _  _  _  _  _          ")
+script.Print("      |__/|| |_\/|__/| (_|(_)(_)| )_)          ")
+script.Print("               /          _/                   ")
+script.Print(" __                                     __  __ ")
+script.Print("/      _|_ _  _    /\  _  _| _ _ . _|  /  \(_  ")
+script.Print("\__|_|_)|_(_)|||  /--\| )(_|| (_)|(_|  \__/__) ")
+script.Print("                                               ")
+script.Print("    __                                         ")
+script.Print("   |__)    |\/| _ |_|_|_  _     |_/ _|| _ _    ")
+script.Print("   |__)\/  |  |(_||_|_| )(-\)/  | \(-||(-|     ")
+script.Print("       /                                       ")
+script.Print("                                               ")
+script.Print("     /           __            __   __ \       ")
+script.Print("    ( |_/.|| _ _|  \ _ _ . _| (__\ /__  )      ")
+script.Print("     \| \|||(-| |__/| (_)|(_|  __/ \__)/       ")
+script.Print("                                               ")
+script.Print("     ──▄█▀█▄──────▄█▀█▄─────────██      ")    
+script.Print("     ▄████████▄ ▄████████▄───▄▀█▄▄▄▄    ")
+script.Print("     ██▀▼▼▼▼▼   ██▀▼▼▼▼▼───▄▀──█▄▄      ")
+script.Print("     █████▄▲▲▲  █████▄▲▲▲──▄▄▄▀───▀▄    ")
+script.Print("     ██████▀▀▀  ██████▀▀▀▀─▀────────▀▀  ")
+
+ script.Print("                              ")
+ script.Print("        __        _           ")         
+ script.Print("      _/  \    _(\(o          ")
+ script.Print("     /     \  /  _  ^^^o      ")
+ script.Print("    /   !   \/  ! '!!!v'      ")
+ script.Print("   !  !  \ _' ( \____         ")
+ script.Print("   ! . \ _! \   \===^\)       ")
+ script.Print("    \ \_!   / __!             ")
+ script.Print("     \!    /    \             ")
+ script.Print("(\_      _/   _\ )            ")
+ script.Print(" \ ^^--^^ __-^ /(__           ")
+ script.Print("  ^^----^^    "^--v'          ")
+ script.Print("                              ")
+
+ script.Print("       __         __                           ")
+ script.Print("      |  \. _|_  |  \ _ _  _  _  _  _          ")
+ script.Print("      |__/|| |_\/|__/| (_|(_)(_)| )_)          ")
+ script.Print("               /          _/                   ")
+ script.Print(" ")
+ script.Print(" __                                     __  __ ")
+ script.Print("/      _|_ _  _    /\  _  _| _ _ . _|  /  \(_  ")
+ script.Print("\__|_|_)|_(_)|||  /--\| )(_|| (_)|(_|  \__/__) ")
+ script.Print(" ")
+ script.Print("     /           __            __   __ \       ")
+ script.Print("    ( |_/.|| _ _|  \ _ _ . _| (__\ /__  )      ")
+ script.Print("     \| \|||(-| |__/| (_)|(_|  __/ \__)/       ")
+ script.Print(" ")
+ script.Print("     ──▄█▀█▄──────▄█▀█▄─────────██      ")    
+ script.Print("     ▄████████▄ ▄████████▄───▄▀█▄▄▄▄    ")
+ script.Print("     ██▀▼▼▼▼▼   ██▀▼▼▼▼▼───▄▀──█▄▄      ")
+ script.Print("     █████▄▲▲▲  █████▄▲▲▲──▄▄▄▀───▀▄    ")
+ script.Print("     ██████▀▀▀  ██████▀▀▀▀─▀────────▀▀  ")
+ script.Print(" ")
+ script.Print("        __        _           ")         
+ script.Print("      _/  \    _(\(o          ")
+ script.Print("     /     \  /  _  ^^^o      ")
+ script.Print("    /   !   \/  ! '!!!v'      ")
+ script.Print("   !  !  \ _' ( \____         ")
+ script.Print("   ! . \ _! \   \===^\)       ")
+ script.Print("    \ \_!   / __!             ")
+ script.Print("     \!    /    \             ")
+ script.Print("(\_      _/   _\ )            ")
+ script.Print(" \ ^^--^^ __-^ /(__           ")
+ script.Print("  ^^----^^    "^---'          ")
+ script.Print(" ")

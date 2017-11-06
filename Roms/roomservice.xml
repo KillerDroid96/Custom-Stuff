@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- My Repo Replacements -->
+  <remove-project name="Resurrection_packages_apps_Settings" />
+  <remove-project name="android_vendor_resurrection" />
+  <remove-project name="android_build" />
+  
+  <!-- Other Repo Replacements -->
+  <remove-project name="LineageOS/android_packages_apps_Gallery2" />
+  <remove-project name="LineageOS/android_external_f2fs-tools" />
+  <remove-project name="LineageOS/android_build_kati" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/compiler-rt" />
+
+  <!-- Remove Repos -->
+  <remove-project name="packages_apps_MusicFX" />
+  <remove-project name="LineageOS/android_packages_apps_AudioFX" />
+  <remove-project name="LineageOS/android_packages_apps_Gello" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+
+  <!-- Flash Optimiztions -->
+  <remote name="flash-gh" fetch="https://github.com/Flash-ROM/"  revision="n7.1.2" />
+  <remote name="flash-gl" fetch="https://gitlab.com/Flash-ROM/"  revision="n7.1.2" />
+  <project name="external_f2fs-tools" path="external/f2fs-tools" remote="flash-gh" />
+  <project path="external/compiler-rt" name="external_compiler-rt" remote="flash-gh" />
+  <project name="aarch64-linux-android-6.x" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" remote="flash-gl" />
+  <project name="arm-linux-androideabi-6.x" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x" remote="flash-gl" />
+  <project name="arm-eabi-6.x"              path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.x" remote="flash-gl" />
+  <project name="clang_linux-x86_5.0.x" path="prebuilts/clang/host/linux-x86/5.0.x" remote="flash-gl" />
+  <project name="build_kati" path="build/kati" remote="flash-gh" />
+  <project name="build_soong" path="build/soong" remote="flash-gh" >
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+
+  <!-- Nexus 6P Repos -->
+  <project name="Flash-ROM/kernel_huawei_angler" path="kernel/huawei/angler" remote="github" revision="n7.1.2-flash" />
+  <project name="DirtyUnicorns/android_vendor_huawei" path="vendor/huawei" remote="github" revision="n7x" />
+  <project name="KillerDroid96/android_device_huawei_angler" path="device/huawei/angler" remote="github" revision="N7.1.2" />
+
+  <!-- Build & Vendors -->
+  <project name="KillerDroid96/OTA" path="OTA" remote="github" revision="N7" />
+  <project name="KillerDroid96/vendor_addons_dragon" path="vendor/addons/dragons" remote="github" revision="N7" />
+  <project name="KillerDroid96/android_build" path="build" remote="github" revision="N7" />
+  <project name="KillerDroid96/android_vendor_resurrection" path="vendor/cm" remote="github" revision="N7" />
+  <project name="KillerDroid96/Resurrection_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="N7" />
+
+  <!-- Omni -->
+  <project name="omnirom/android_packages_apps_snapdragoncamera" path="packages/apps/snapdragonCamera" remote="github" revision="android-7.1" />
+  <project name="omnirom/android_packages_apps_gallery2" path="packages/apps/gallery2" remote="github" revision="android-7.1" />
+
+  <!--Lineage -->
+  <project name="LineageOS/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-14.1" />
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="cm-14.1" />
+  
+</manifest>
